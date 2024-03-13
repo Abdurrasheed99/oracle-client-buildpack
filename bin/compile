@@ -21,8 +21,9 @@ tar xvzf libaio-0.3.110.tar.gz && rm libaio-0.3.110.tar.gz
 
 mv instantclient{_12_1,}
 cd libaio-0.3.110
-make prefix=$CLIENT_BUILD_DIR/instantclient/libaio1 install
-make prefix=/app/.oracle-build/instantclient/libaio install
+make prefix=$CLIENT_BUILD_DIR libdir=instantclient install
+# make prefix=/app/.oracle-build/instantclient/libaio install
+# make prefix=/app/.oracle-build   libdir=instantclient install
 cd ../
 cd instantclient
 ln -s ./ lib

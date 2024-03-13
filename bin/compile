@@ -25,7 +25,9 @@ ln -s libclntsh.so.12.1 libclntsh.so
 ln -s libocci.so.12.1 libocci.so
 
 cd ../libaio-0.3.110
-make prefix=$CLIENT_BUILD_DIR install
+make prefix=$CLIENT_BUILD_DIR/libaio install
+cd ../
+rm libaio-0.3.110
 echo "make done"
 
 cd ../instantclient

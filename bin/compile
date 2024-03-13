@@ -30,7 +30,7 @@ cd ../
 rm -rf libaio-0.3.110
 echo "make done"
 
-cd ../instantclient
+cd instantclient
 
 cat <<EOT > $BP_DIR/export
 export LD_LIBRARY_PATH=$CLIENT_BUILD_DIR/instantclient/:$BUILD_DIR/.apt/lib/x86_64-linux-gnu/${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}

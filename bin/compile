@@ -18,6 +18,7 @@ unzip instantclient-basic-linux.x64-12.1.0.2.0.zip && rm instantclient-basic-lin
 unzip instantclient-sdk-linux.x64-12.1.0.2.0.zip && rm instantclient-sdk-linux.x64-12.1.0.2.0.zip
 mv instantclient{_12_1,}
 cd instantclient
+ln -s ./ lib
 ln -s libclntsh.so.12.1 libclntsh.so
 ln -s libocci.so.12.1 libocci.so
 

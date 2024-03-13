@@ -24,6 +24,7 @@ cd libaio-0.3.110
 make prefix=$CLIENT_BUILD_DIR libdir=libaio install
 # make prefix=/app/.oracle-build/instantclient/libaio install
 # make prefix=/app/.oracle-build   libdir=instantclient install
+echo "make done"
 cd ../
 cd instantclient
 ln -s ./ lib

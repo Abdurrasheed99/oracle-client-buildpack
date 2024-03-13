@@ -27,7 +27,7 @@ make prefix=$CLIENT_BUILD_DIR libdir=libaio install
 echo "make done"
 cd ../
 cd instantclient
-#ln -s ./ lib
+ln -s ./ lib
 ln -s libclntsh.so.12.1 libclntsh.so
 ln -s libocci.so.12.1 libocci.so
 

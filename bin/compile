@@ -20,7 +20,8 @@ unzip instantclient-sdk-linux.x64-12.1.0.2.0.zip && rm instantclient-sdk-linux.x
 tar xvzf libaio-0.3.110.tar.gz && rm libaio-0.3.110.tar.gz
 
 mv instantclient{_12_1,}
-make prefix=`pwd`/instantclient/libaio install
+cd libaio-0.3.110
+make prefix=../instantclient/libaio install
 cd instantclient
 ln -s ./ lib
 ln -s libclntsh.so.12.1 libclntsh.so

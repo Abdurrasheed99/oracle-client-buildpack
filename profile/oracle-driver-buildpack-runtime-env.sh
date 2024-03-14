@@ -1,6 +1,7 @@
 export LD_LIBRARY_PATH="$HOME/.oracle-build/instantclient/:/lib/x86_64-linux-gnu/:$HOME/.oracle-build/libaio/lib"
 export OCI_LIB_DIR="$HOME/.oracle-build/instantclient"
 export OCI_INC_DIR="$HOME/.oracle-build/instantclient/sdk/include"
+export TNS_ADMIN="$HOME/network/admin"
 
 
 
